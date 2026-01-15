@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite City - Kwekwe</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to a CSS file -->
+</head>
+
+<body>
+    <h1>Kwekwe, Zimbabwe</h1>
+    <p>Kwekwe is located in the Midlands region of Zimbabwe, making it strategically positioned almost at the center of
+        the country. This city is well known for its vibrant iron industry, which plays a crucial role in the local
+        economy.</p>
+    <p>The city is not just an industrial hub but also boasts a rich cultural history and a lively community. With
+        numerous shops and markets, Kwekwe offers a glimpse into the daily life of Zimbabweans.</p>
+    <img src="https://pfst.cf2.poecdn.net/base/image/61b924fa7f30639208b0c88d358d8c683335518b28536debcf7df584161576d7?w=1024&h=768"
+        alt="Scenic view of Kwekwe, Zimbabwe">
+</body>
+
+</html>
