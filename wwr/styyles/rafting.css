@@ -2,9 +2,7 @@
     --body-font: 'Arial', sans-serif;
     --heading-font: 'Verdana', sans-serif;
     --primary-color: #2E8B57;
-    /* Example primary color */
     --accent1-color: #FFCC00;
-    /* Example accent color */
 }
 
 * {
@@ -18,30 +16,45 @@ body {
     color: var(--primary-color);
 }
 
-header,
-main,
-footer {
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
     width: 840px;
     margin: 0 auto;
-    text-align: center;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+.logo img {
+    width: 100%;
+    /* Adjust as needed */
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+.nav {
+    display: flex;
+    justify-content: space-around;
 }
 
-.socialmedia a {
+.vertical-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vertical-menu li {
+    margin: 10px 0;
+}
+
+.vertical-menu a {
     text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.vertical-menu a:hover {
+    color: #007BFF;
+}
+
+main {
+    text-align: center;
 }
 
 .hero {
@@ -65,61 +78,70 @@ h1 {
     color: #fff;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    /* Adjust as needed */
-    left: 20px;
-    /* Adjust as needed */
-}
-
-.hero article img {
+.client-image {
     float: right;
-    width: 125px;
+    width: 150px;
     margin-left: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.hero article {
-    position: relative;
-    /* Use relative positioning for better alignment */
-    margin-top: 20px;
-    /* Add margin for spacing */
+.history,
+.adventures {
+    margin: 20px 0;
+}
+
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+
+figure img {
+    width: 200px;
+    /* Adjust for uniform sizing */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 840px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialmedia a {
+    margin-left: 10px;
+    /* Space between icons */
+}
+
+.client-testimonial {
+    display: flex;
+    justify-content: center;
+    /* Center the entire flex layout */
+    align-items: center;
+    margin: 20px 0;
 }
 
 .client-image {
-    float: right;
-    /* Keeps the image to the left */
-    width: 150px;
-    /* Set width for the image */
-    margin-left: 16px;
-    /* Space between image and text */
+    flex: 0 0 150px;
+    /* Fix the width and allow the image to remain smaller */
+    margin: 0 20px;
+    /* Add horizontal margin for space on left and right */
     border-radius: 10px;
-    /* Optional: round the corners of the image */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    /* Optional: add a shadow for better visibility */
-}
-.vertical-menu {
-    list-style-type: none;
-    /* Remove default list styling */
-    padding: 0;
-    /* Remove padding */
 }
 
-.vertical-menu li {
-    margin: 10px 0;
-    /* Add margin for spacing between items */
-}
-
-.vertical-menu a {
-    text-decoration: none;
-    /* Remove underline from links */
-    color: #333;
-    /* Change text color */
-    font-size: 18px;
-    /* Adjust font size */
-}
-
-.vertical-menu a:hover {
-    color: #007BFF;
-    /* Change color on hover */
+.client-text {
+    max-width: 500px;
+    /* Limit the width for better readability */
+    text-align: center;
+    /* Center text for better alignment */
 }
