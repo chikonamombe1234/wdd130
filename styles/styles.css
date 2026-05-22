@@ -1,0 +1,48 @@
+/* Existing selectors (nav, h1, etc.) remain here */
+
+/* 1. Limit the width of the main section */
+main {
+    max-width: 800px;
+    /* or whatever value you prefer */
+}
+
+/* 2. Style the Aside element */
+aside {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* Light border */
+    padding: 15px;
+    background-color: #f0f0f0;
+    /* Light gray background */
+    color: #333;
+    /* Text color */
+}
+
+/* 3. Style images INSIDE the aside */
+aside img {
+    width: 200px;
+    height: auto;
+    /* This keeps the aspect ratio (prevents squishing) */
+}
+
+/* 4. Style the profile image inside MAIN */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* 5. Remove padding from all paragraphs (set to 0) */
+p {
+    padding: 0;
+}
+
+/* 6. Style the Footer */
+footer {
+    margin-top: 20px;
+    /* Space above footer */
+    border-top: 2px solid #000;
+    /* Solid line on top */
+    text-align: center;
+    /* Center the text */
+}
