@@ -1,0 +1,250 @@
+
+/* CSS Variables - Color Scheme */
+:root {
+    --primary-color: #1a4d8c;
+    --secondary-color: #e87c2a;
+    --accent1-color: #2c6e5c;
+    --accent2-color: #f4a261;
+    --heading-font: 'Arial', 'Helvetica', sans-serif;
+    --body-font: 'Verdana', 'Geneva', sans-serif;
+}
+
+/* Reset box-model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #f5f5f5;
+}
+
+/* Limit page width and center content */
+header, main, footer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+header .logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Headings styling */
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Consistent spacing for elements */
+p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* H1 overlay on hero image */
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Article overlay on hero */
+.hero article {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    background-color: rgba(44, 110, 92, 0.85);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
+}
+
+/* Happy client image inside article */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* History section styling */
+.history {
+    padding: 32px;
+    background-color: #fafafa;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color);
+    display: inline-block;
+    width: auto;
+    padding-bottom: 8px;
+}
+
+.history p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Adventure section styling */
+.adventure {
+    padding: 32px;
+    margin: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    min-height: 200px;
+}
+
+.adventure h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color);
+    display: inline-block;
+    width: auto;
+    padding-bottom: 8px;
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 32px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Remove underline from social media links */
+.socialmedia a {
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    nav {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+        top: 10px;
+        padding: 8px;
+    }
+    
+    .hero article {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin: 16px;
+    }
+    
+    .hero article img {
+        width: 80px;
+    }
+    
+    footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    
+    .socialmedia {
+        display: flex;
+        justify-content: center;
+    }
+}
