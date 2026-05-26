@@ -4,43 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 130 | Home Page</title>
-    <meta name="description"
-      content="John Doe's home page for WDD 130 - Web Fundamentals at BYU-Idaho. Learn about web development basics, HTML, CSS, and my home state.">
-    <meta name="author" content="Jonathan Hondoyedzomba">
+    <title>WDD 130 - Home Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Welcome to My WDD 130 Home Page</h1>
         <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
-            <a href="#">Contact</a>
+            <!-- TWO NEW LINKS ADDED HERE -->
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
         </nav>
     </header>
-
     <main>
-        <h2>About Me</h2>
-        <img src="images/Jona.jpg" alt="Jonathan Hondoyedzomba profile picture">
-        <p>Hello! My name is John Doe. I am a web development student at BYU-Idaho. I am learning
-            HTML, CSS, and responsive design. I enjoy creating websites that are both functional and
-            visually appealing. This course, WDD 130: Web Fundamentals, is helping me build a strong
-            foundation for my future career in web development.</p>
-        <p>I am excited to learn more about CSS layouts, accessibility, and best practices for
-            modern web design. Thank you for visiting my home page!</p>
+        <h1>Your Name</h1>
+        <!-- FLOATED PROFILE IMAGE -->
+        <img src="images/Jona.jpg" alt="Your Name" class="profile-image">
+        <p>This is the paragraph about you. Because the image above has a CSS class that floats it
+            to the right, this text will wrap around the image nicely. You might need to add a few
+            more sentences to see the wrapping effect properly. Keep writing until the text flows
+            under the image as well.</p>
+
+        <!-- NEW UNORDERED LIST OF TEMPLES -->
+        <h2>My Favorite Temples</h2>
+        <ul class="box"> <!-- Class "box" added here -->
+            <li><a href="https://churchofjesuschrist.org/temples/details/salt-lake-temple?lang=eng"
+                  target="_blank">Salt Lake Temple</a></li>
+            <li><a href="https://churchofjesuschrist.org/temples/details/washington-dc-temple?lang=eng"
+                  target="_blank">Washington D.C. Temple</a></li>
+            <li><a href="https://churchofjesuschrist.org/temples/details/sao-paulo-brazil-temple?lang=eng"
+                  target="_blank">São Paulo Brazil Temple</a></li>
+        </ul>
     </main>
 
-    <aside>
-        <h2>Zambezi River</h2>
-        <img src="images/View.png" alt="Beautiful Zambezi">
-        <p>The Zambezi River is a the most tourist attraction resource in Zimbabwe and Zambia. The
-            most visited places are the Victoria Falls, Lake Kariba and The Mana Pools..</p>
+    <!-- ASIDE WITH BOX CLASS -->
+    <aside class="box"> <!-- Class "box" added here -->
+        <h2>State/Country</h2>
+        <img src="your-state-image.jpg" alt="Description of image">
+        <p>Description of your state or country.</p>
     </aside>
 
     <footer>
-        <p>&copy; 2026 | Jonathan Hondoyedzomba | WDD 130</p>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
 </body>
 

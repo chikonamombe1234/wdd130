@@ -1,100 +1,62 @@
-/* Import Google Font (optional but adds nice styling) */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+/* 1. UNIVERSAL SELECTOR RULE (Margin, Padding, Box-sizing) */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-    line-height: 1.6;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Main selector styling */
-main {
-    max-width: 800px;
-    margin-bottom: 20px;
-}
-
-/* Profile image inside main */
-main img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
+/* 2. PROFILE IMAGE FLOAT RULE */
+.profile-image {
     float: right;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-/* Paragraph styling */
-p {
-    padding: 0;
-    margin-bottom: 15px;
-}
-
-/* Aside styling */
-aside {
-    width: 300px;
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    padding: 15px;
-    background-color: #f5f5f5;
-    color: #333;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-/* Image inside aside */
-aside img {
+    margin: 0 0 1rem 1rem;
+    /* Adds spacing so text doesn't touch the image */
     width: 200px;
+    /* Adjust to your image size */
     height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 4px;
 }
 
-/* Footer styling */
-footer {
-    margin-top: 30px;
-    border-top: 2px solid #ccc;
-    text-align: center;
-    padding-top: 15px;
-    font-size: 0.9em;
-    color: #666;
+/* 3. CLASS SELECTOR FOR "BOX" */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    /* Your choice of color */
+    color: #333;
+    /* Your choice of color */
+    border: 1px solid #ccc;
+    /* Optional border */
 }
 
-/* Header styling */
-header {
-    margin-bottom: 30px;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+/* 4. POSITIONING FOR THE ASIDE CONTAINER */
+aside {
+    position: relative;
+    /* This makes the aside the reference point for absolute positioning */
+    width: 300px;
+    /* Example width */
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-/* Navigation styling */
-nav {
-    background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-nav a {
+/* 5. ABSOLUTE POSITIONING FOR THE HEADING OVERLAY */
+aside h2 {
+    position: absolute;
+    top: 20px;
+    /* Adjust distance from top */
+    left: 20px;
+    /* Adjust distance from left */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
     color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
+    padding: 0.5rem;
+    margin: 0;
 }
 
-nav a:hover {
-    background-color: #555;
-    border-radius: 3px;
+/* 6. CLEARFIX FOR FLOATS (Optional but good practice to prevent layout breaking) */
+main::after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
+/* ===== CLASS SELECTORS ===== */
+/* This is the comment header for Class Selectors section */
+/* Any future class selectors will go below this line */
