@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 130 | HTML Poll Form</title>
+  <!-- 
+    Author: WDD 130 Student
+    Description: Basic HTML poll form without CSS styling.
+    This page demonstrates semantic HTML structure and form elements.
+  -->
+</head>
+<body>
+  <!-- Header: contains page identification -->
+  <header>
+    <h1>📋 Web Fundamentals Poll</h1>
+    <p>Share your preferences and feedback — no backend processing, just frontend practice.</p>
+  </header>
+
+  <!-- Main content: the core interactive poll form -->
+  <main>
+    <!-- 
+      The <form> element wraps all input controls.
+      No action/method are needed because this activity focuses on frontend structure only.
+      The form includes labels, various input types, and a submit button.
+    -->
+    <form>
+      <!-- 1. FULL NAME - text input, required -->
+      <div class="form-field">
+        <label for="fullname">Full name:</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="e.g., Maria Sanchez">
+      </div>
+
+      <!-- 2. EMAIL ADDRESS - email type, required -->
+      <div class="form-field">
+        <label for="useremail">Email address:</label>
+        <input type="email" id="useremail" name="useremail" required placeholder="you@example.com">
+      </div>
+
+      <!-- 3. FAVORITE BROWSER - select dropdown (multiple-choice) -->
+      <div class="form-field">
+        <label for="browser">What is your favorite browser?</label>
+        <select name="browser" id="browser">
+          <option value="chrome">Google Chrome</option>
+          <option value="safari">Apple Safari</option>
+          <option value="edge">Microsoft Edge</option>
+          <option value="brave">Brave</option>
+          <option value="firefox">Mozilla Firefox</option>
+          <option value="other">Other / I don't have one</option>
+        </select>
+      </div>
+
+      <!-- 4. HOUSEHOLD PET QUESTION - single checkbox -->
+      <div class="form-field checkbox-group">
+        <input type="checkbox" id="pet" name="pet" value="yes">
+        <label for="pet">Do you have a household pet?</label>
+        <!-- small note: checkbox label is positioned after input for natural reading -->
+      </div>
+
+      <!-- 5. PLACES LIVED - textarea with placeholder & rows -->
+      <div class="form-field">
+        <label for="feedback">List the places you have lived:</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="e.g., Phoenix, AZ → Portland, OR → Boise, ID (one per line or comma separated)"></textarea>
+      </div>
+
+      <!-- Submit button: sends form data (simulated, no actual server action) -->
+      <div class="form-actions">
+        <button type="submit">Submit Poll</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer: copyright and additional context -->
+  <footer>
+    <p>&copy; <span id="current-year">2026</span> Brigham Young University-Idaho | All rights reserved</p>
+    <p>WDD 130 - Web Fundamentals | HTML Form Activity (no CSS styling applied)</p>
+  </footer>
+
+  <!-- 
+    Note: This is a frontend-only demonstration. The form will not send data to a server.
+    The required attributes (fullname and email) trigger browser validation.
+    You can experiment and see how HTML form elements behave natively.
+  -->
+</body>
+</html>
