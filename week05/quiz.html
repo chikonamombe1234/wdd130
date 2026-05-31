@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | Web Fundamentals Quiz</title>
+    <!-- Link to external CSS file in the styles folder -->
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <!-- Main heading as required -->
+        <h1>📝 HTML & CSS Core Concepts Quiz</h1>
+        <p class="quiz-intro">Test your knowledge of web fundamentals. Answer all four questions and submit your quiz.
+        </p>
+
+        <!-- Quiz Form: method "post" (no action for demo, but valid structure) -->
+        <form action="#" method="post" id="quizForm">
+            <!-- Question 1: text input (fill in the blank) -->
+            <div class="form-group">
+                <label for="q1">1. Fill in the blank: The HTML attribute used to specify an inline CSS style is called
+                    __________.</label>
+                <input type="text" id="q1" name="q1" placeholder="Enter your answer" required>
+            </div>
+
+            <!-- Question 2: textarea (short answer) -->
+            <div class="form-group">
+                <label for="q2">2. Explain in one sentence: What is the difference between `class` and `id` in
+                    CSS?</label>
+                <textarea id="q2" name="q2" rows="4" placeholder="Type your short answer here..." required></textarea>
+            </div>
+
+            <!-- Question 3: select dropdown (at least 3 options, first disabled/selected) -->
+            <div class="form-group">
+                <label for="q3">3. Which CSS property is used to change the background color of an element?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose an option ...</option>
+                    <option value="color">color</option>
+                    <option value="bgcolor">bgcolor</option>
+                    <option value="background-color">background-color</option>
+                    <option value="background">background</option>
+                </select>
+            </div>
+
+            <!-- Question 4: number type input (integer answer) -->
+            <div class="form-group">
+                <label for="q4">4. How many heading levels (from &lt;h1&gt; to &lt;h6&gt;) are defined in HTML? (Enter a
+                    numeric value)</label>
+                <input type="number" id="q4" name="q4" min="1" max="10" placeholder="e.g., 6" required>
+            </div>
+
+            <!-- Submit button -->
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </div>
+        </form>
+
+        <!-- optional footer for nice validation (no extra points but good practice) -->
+        <footer class="quiz-footer">
+            <p>WDD 130 - Web Fundamentals | Quiz Form Activity</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+/* quiz.css – Styles for the HTML & CSS Core Concepts Quiz */
+/* WDD 130: Web Fundamentals | Code-along Activity */
+
+/* CSS Reset / Box-sizing border-box for consistent sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography & Body styling */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: #f1f5f9;
+    /* soft neutral background */
+    color: #0f172a;
+    line-height: 1.5;
+    padding: 2rem 1rem;
+}
+
+/* Main container: single column, centered, max-width for readability */
+.quiz-container {
+    max-width: 780px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+    padding: 2rem 2rem 2rem 2rem;
+    transition: all 0.2s ease;
+}
+
+/* Heading style */
+h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #0f3b5c;
+    border-left: 6px solid #2c7da0;
+    padding-left: 1rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.3px;
+}
+
+.quiz-intro {
+    color: #334155;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.75rem;
+}
+
+/* Form groups: stacked vertical layout */
+.form-group {
+    margin-bottom: 1.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #1e293b;
+}
+
+/* Required field subtle indicator */
+label:has(+ input[required])::after,
+label:has(+ textarea[required])::after,
+label:has(+ select[required])::after {
+    content: " *";
+    color: #c2410c;
+    font-weight: bold;
+}
+
+/* Input, textarea, select common styling */
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.75rem;
+    background-color: #fefefe;
+    transition: border 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+
+/* Focus states for accessibility & visual feedback */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #2c7da0;
+    box-shadow: 0 0 0 3px rgba(44, 125, 160, 0.2);
+}
+
+/* Textarea specific */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Select dropdown arrow custom (preserve native, but maintain consistency) */
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+}
+
+/* Number input spinner alignment */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 0.5;
+}
+
+/* Submit Button styling */
+.submit-btn {
+    background-color: #2c7da0;
+    color: white;
+    border: none;
+    padding: 0.85rem 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.05s linear;
+    width: auto;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.submit-btn:hover {
+    background-color: #1f5e7e;
+    transform: translateY(-1px);
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+    background-color: #154f6b;
+}
+
+/* Footer / copyright line (light) */
+.quiz-footer {
+    margin-top: 2.2rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #5b6e8c;
+    border-top: 1px solid #e2edf2;
+    padding-top: 1.2rem;
+}
+
+/* Responsive: small screens padding adjustment */
+@media (max-width: 640px) {
+    .quiz-container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .form-group {
+        margin-bottom: 1.4rem;
+    }
+}
+
+/* Optional: placeholder styling */
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+/* make sure the select non-selectable disabled option appears gray */
+select option:disabled {
+    color: #6c757d;
+    background-color: #f8f9fa;
+}
