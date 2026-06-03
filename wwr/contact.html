@@ -9,179 +9,23 @@
     <meta name="author" content="Jonathan Hondoyedzomba">
     <title>Rapid Riders | Contact Us – White Water Rafting Inquiries</title>
     <link rel="stylesheet" href="styles/rafting.css">
-</head>
-
-<body>
-    <div class="page-container">
-        <!-- HEADER - Exact same as about.html (logo + navigation) -->
-        <header>
-            <div class="logo">
-                <img src="images/logo.jpeg" alt="Rapid Riders Logo">
-            </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html" class="active">Contact</a>
-            </nav>
-        </header>
-
-        <main>
-            <!-- CONTACT HERO SECTION (optional but keeps consistency) -->
-            <div class="contact-hero">
-                <h1>Get in Touch With Rapid Riders</h1>
-                <p>Have questions about our rafting trips? Need help with a reservation? We’d love to hear from you.
-                    Reach out using the information or form below.</p>
-            </div>
-
-            <!-- COMPANY INFORMATION + EMBEDDED GOOGLE MAP -->
-            <section class="contact-info-section">
-                <div class="company-details">
-                    <h2>Rapid Riders Headquarters</h2>
-                    <div class="address">
-                        <h3>📍 Address</h3>
-                        <p>2799 Section 13, Mbizo<br>
-                            Kwekwe<br>
-                            Zimbabwe</p>
-                    </div>
-                    <div class="phone">
-                        <h3>📞 Phone</h3>
-                        <p>Main Office: <a href="tel:+263552546289">(263) 552546289</a><br>
-                            Reservations: <a href="tel:+2638688005067">(263) 868805067</a></p>
-                    </div>
-                    <div class="email">
-                        <h3>✉️ Email</h3>
-                        <p><a href="mailto:info@rapidriders.com">info@rapidriders.com</a><br>
-                            <a href="mailto:reservations@rapidriders.com">reservations@rapidriders.com</a>
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Google Map (embedded, inline style="border:0" removed) -->
-                <div class="map-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15590.377840757435!2d29.8138795!3d-18.9287534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1831ceb26eb1765b%3A0xcc035acf549b0d60!2sKwekwe%2C%20Zimbabwe!5e0!3m2!1sen!2s!4v1748791134176!5m2!1sen!2s"
-                        width="100%" height="300" title="Google Map of Kwekwe, Zimbabwe" allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div>
-            </section>
-
-            <!-- EMPLOYEE PROFILES (at least 3 with images and captions) -->
-            <section class="team-section">
-                <h2>Meet Your Guides & Team</h2>
-                <div class="employee-grid">
-                    <figure class="employee-card">
-                        <img src="images/Marceline Naymurusa.jpg" alt="Sarah Johnson, Lead Guide" width="280" height="280"
-                            loading="lazy">
-                        <figcaption>
-                            <strong>Marceline Nyamurusa</strong><br>
-                            <span>Head Guide & Safety Director</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="employee-card">
-                        <img src="images/Naomey Mutara 20181110_153513.jpg" alt="Miguel Reyes, Trip Coordinator" width="280" height="280"
-                            loading="lazy">
-                        <figcaption>
-                            <strong>Naomey Mutara</strong><br>
-                            <span>Expedition Coordinator</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="employee-card">
-                        <img src="images/Charles Nyama 20161215_061035.jpg" alt="Jenna Chen, Whitewater Specialist" width="280"
-                            height="280" loading="lazy">
-                        <figcaption>
-                            <strong>Charles Nyama</strong><br>
-                            <span>Senior Whitewater Guide</span>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- Note: add actual images (guide-sarah.jpg, guide-miguel.jpg, guide-jenna.jpg) to your images folder -->
-            </section>
-
-            <!-- CONTACT FORM: name, email, purpose (radio), message, newsletter checkbox, submit button -->
-            <section class="contact-form-section">
-                <h2>Send Us a Message</h2>
-                <p>Questions about a specific trip, reservation changes, or website feedback? Fill out the form below
-                    and we'll get back to you within 24 hours.</p>
-
-                <form action="#" method="post" class="rafting-contact-form">
-                    <!-- User's Name -->
-                    <div class="form-group">
-                        <label for="fullname">Full Name *</label>
-                        <input type="text" id="fullname" name="fullname" required placeholder="e.g., Taylor Smith">
-                    </div>
-
-                    <!-- User's Email Address -->
-                    <div class="form-group">
-                        <label for="emailaddr">Email Address *</label>
-                        <input type="email" id="emailaddr" name="emailaddr" required placeholder="you@example.com">
-                    </div>
-
-                    <!-- Purpose of Message (radio buttons) -->
-                    <fieldset class="purpose-group">
-                        <legend>Purpose of your message *</legend>
-                        <div class="radio-option">
-                            <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
-                            <label for="inquiry">General Inquiry</label>
-                        </div>
-                        <div class="radio-option">
-                            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                            <label for="reservation">Reservation Question</label>
-                        </div>
-                        <div class="radio-option">
-                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                            <label for="suggestion">Website Suggestion</label>
-                        </div>
-                    </fieldset>
-
-                    <!-- Message textarea -->
-                    <div class="form-group">
-                        <label for="message">Your Message *</label>
-                        <textarea id="message" name="message" rows="5" required
-                            placeholder="Tell us about your rafting interests, questions, or feedback..."></textarea>
-                    </div>
-
-                    <!-- Newsletter checkbox -->
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
-                        <label for="newsletter">📧 Please subscribe me to the monthly newsletter (rafting tips, special
-                            offers & stories)</label>
-                    </div>
-
-                    <!-- Submit button (clear, descriptive text) -->
-                    <div class="form-actions">
-                        <button type="submit" class="submit-btn">Send Message →</button>
-                    </div>
-                </form>
-            </section>
-        </main>
-
-        <!-- FOOTER - Exactly the same as about.html (copyright + social icons) -->
-        <footer>
-            <p>&copy; 2026 Rapid Riders | Created by Jonathan Hondoyedzomba</p>
-            <div class="social-links">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook-icon.png" alt="Facebook">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter-icon.png" alt="Twitter">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram-icon.png" alt="Instagram">
-                </a>
-            </div>
-        </footer>
-    </div>
-
-    <!-- 
-        **********************************************
-        IMPORTANT: CSS ADDITIONS to rafting.css
-        The following styles should be APPENDED to your existing styles/rafting.css file.
-        They support the new contact page layout without breaking existing pages.
-        **********************************************
-    -->
     <style>
-        /* Additional CSS for contact.html – add these rules to your rafting.css file */
+        /* ===== ADDITIONAL & OVERRIDE STYLES FOR CONTACT PAGE ===== */
+        /* Ensures color contrast passes AA level and fixes layout issues */
+
+        /* Global contrast improvements */
+        body {
+            background: #ffffff;
+            color: #1e2a2a;
+        }
+
+        /* Placeholder contrast fix */
+        ::placeholder {
+            color: #3b4a4a;
+            opacity: 1;
+        }
+
+        /* Contact hero */
         .contact-hero {
             background: linear-gradient(135deg, #eef2f5 0%, #dce6ed 100%);
             padding: 2rem;
@@ -197,6 +41,11 @@
             margin-bottom: 0.5rem;
         }
 
+        .contact-hero p {
+            color: #1e2a2a;
+        }
+
+        /* Company info + map row */
         .contact-info-section {
             display: flex;
             flex-wrap: wrap;
@@ -227,7 +76,8 @@
         .company-details h3 {
             font-size: 1rem;
             margin: 0.8rem 0 0.2rem;
-            color: #2c5a55;
+            color: #1f4e49;
+            /* Darker for contrast on #faf9f7 (ratio ~8:1) */
         }
 
         .company-details a {
@@ -249,13 +99,12 @@
 
         .map-container iframe {
             border: 0;
-            /* ensures inline border:0 is removed, styling here */
             width: 100%;
-            height: 100%;
-            min-height: 280px;
+            height: 280px;
             display: block;
         }
 
+        /* Team section */
         .team-section {
             margin-bottom: 3rem;
         }
@@ -302,6 +151,11 @@
             color: #0f3b3a;
         }
 
+        .employee-card span {
+            color: #2c5a55;
+        }
+
+        /* Contact form */
         .contact-form-section {
             background: #f8fafc;
             border-radius: 24px;
@@ -336,6 +190,8 @@
             border-radius: 10px;
             font-family: inherit;
             font-size: 1rem;
+            background-color: #ffffff;
+            color: #1e2a2a;
         }
 
         .rafting-contact-form input:focus,
@@ -386,6 +242,7 @@
         .checkbox-group label {
             display: inline;
             font-weight: normal;
+            color: #1e2a2a;
         }
 
         .submit-btn {
@@ -409,6 +266,43 @@
             margin-top: 1.5rem;
         }
 
+        /* Footer - guaranteed contrast */
+        footer {
+            background-color: #0f3b3a;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        footer p {
+            color: #ffffff;
+            margin: 0;
+        }
+
+        footer .social-links a {
+            text-decoration: none;
+        }
+
+        footer .social-links img {
+            width: 32px;
+            height: auto;
+            filter: brightness(0) invert(1);
+            /* ensures icons stay visible on dark background */
+        }
+
+        /* Active nav link */
+        nav a.active {
+            text-decoration: underline;
+            font-weight: bold;
+            color: #ff8c42;
+        }
+
+        /* Responsive */
         @media (max-width: 700px) {
             .contact-info-section {
                 flex-direction: column;
@@ -417,15 +311,169 @@
             .employee-grid {
                 gap: 1rem;
             }
-        }
 
-        /* Ensure the active nav link styling matches */
-        nav a.active {
-            text-decoration: underline;
-            font-weight: bold;
-            color: #ff8c42;
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <!-- HEADER - matches about.html -->
+        <header>
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Rapid Riders Logo">
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- CONTACT HERO -->
+            <div class="contact-hero">
+                <h1>Get in Touch With Rapid Riders</h1>
+                <p>Have questions about our rafting trips? Need help with a reservation? We’d love to hear from you.
+                    Reach out using the information or form below.</p>
+            </div>
+
+            <!-- COMPANY INFO + GOOGLE MAP -->
+            <section class="contact-info-section">
+                <div class="company-details">
+                    <h2>Rapid Riders Headquarters</h2>
+                    <div class="address">
+                        <h3>📍 Address</h3>
+                        <p>2799 Section 13, Mbizo<br>
+                            Kwekwe<br>
+                            Zimbabwe</p>
+                    </div>
+                    <div class="phone">
+                        <h3>📞 Phone</h3>
+                        <p>Main Office: <a href="tel:+263552546289">(263) 552546289</a><br>
+                            Reservations: <a href="tel:+2638688005067">(263) 868805067</a></p>
+                    </div>
+                    <div class="email">
+                        <h3>✉️ Email</h3>
+                        <p><a href="mailto:info@rapidriders.com">info@rapidriders.com</a><br>
+                            <a href="mailto:reservations@rapidriders.com">reservations@rapidriders.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Embedded Google Map -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15590.377840757435!2d29.8138795!3d-18.9287534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1831ceb26eb1765b%3A0xcc035acf549b0d60!2sKwekwe%2C%20Zimbabwe!5e0!3m2!1sen!2s!4v1748791134176!5m2!1sen!2s"
+                        title="Google Map of Kwekwe, Zimbabwe" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <!-- EMPLOYEE PROFILES (3 images with captions) -->
+            <section class="team-section">
+                <h2>Meet Your Guides & Team</h2>
+                <div class="employee-grid">
+                    <figure class="employee-card">
+                        <img src="images/marceline.jpg" alt="Marceline Nyamurusa, Head Guide" width="280"
+                            height="280"jpg loading="lazy">
+                        <figcaption>
+                            <strong>Marceline Nyamurusa</strong><br>
+                            <span>Head Guide & Safety Director</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="employee-card">
+                        <img src="images/neoney.jpg" alt="Naomey Mutara, Expedition Coordinator" width="280"
+                            height="280" loading="lazy">
+                        <figcaption>
+                            <strong>Naomey Mutara</strong><br>
+                            <span>Expedition Coordinator</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="employee-card">
+                        <img src="images/charles.jpg" alt="Charles Nyama, Senior Whitewater Guide" width="280"
+                            height="280" loading="lazy">
+                        <figcaption>
+                            <strong>Charles Nyama</strong><br>
+                            <span>Senior Whitewater Guide</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- CONTACT FORM -->
+            <section class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <p>Questions about a specific trip, reservation changes, or website feedback? Fill out the form below
+                    and we'll get back to you within 24 hours.</p>
+
+                <form action="#" method="post" class="rafting-contact-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="e.g., Taylor Smith">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailaddr">Email Address *</label>
+                        <input type="email" id="emailaddr" name="emailaddr" required placeholder="you@example.com">
+                    </div>
+
+                    <fieldset class="purpose-group">
+                        <legend>Purpose of your message *</legend>
+                        <div class="radio-option">
+                            <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                            <label for="inquiry">General Inquiry</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Tell us about your rafting interests, questions, or feedback..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                        <label for="newsletter">📧 Please subscribe me to the monthly newsletter (rafting tips, special
+                            offers & stories)</label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Send Message →</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <!-- FOOTER - consistent with about page & good contrast -->
+        <footer>
+            <p>&copy; 2026 Rapid Riders | Created by Jonathan Hondoyedzomba</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter-icon.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <!-- closing .page-container -->
 </body>
 
 </html>
