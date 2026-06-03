@@ -337,4 +337,69 @@ footer p {
     .social-links {
         justify-content: center;
     }
+}/* Header - ensure it stays above hero content */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    border-bottom: 4px solid var(--secondary-color);
+    position: relative;
+    z-index: 10;
+}
+
+/* Hero section - add top margin to prevent overlap */
+.hero {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    /* No negative margin */
+    background-color: #fff;
+    /* Fallback */
+}
+
+/* Hero image - limit height and prevent it from stretching too tall */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    /* Slightly reduced from 500px */
+    object-fit: cover;
+    object-position: center 30%;
+    /* Moves focus down a bit, keeping the rafters visible */
+}
+
+/* Hero heading - ensure it doesn't cover the header */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    /* Slightly smaller on desktop */
+    color: #ffffff;
+    background-color: rgba(26, 77, 140, 0.8);
+    padding: 0.75rem;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+
+/* Hero article - positioned lower so it doesn't conflict with header */
+.hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    background-color: rgba(44, 110, 92, 0.9);
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    z-index: 2;
 }
