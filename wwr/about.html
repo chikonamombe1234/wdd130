@@ -9,6 +9,20 @@
     <meta name="author" content="Jonathan Hondoyedzomba">
     <title>Rapid Riders | About Us - White Water Rafting Adventures</title>
     <link rel="stylesheet" href="styles/rafting.css">
+    <!-- Add a small style for visually hidden heading (accessible but not visible) -->
+    <style>
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,6 +46,8 @@
                 <img src="images/happy-client.jpg" alt="White water rafting adventure">
                 <h1>Rapid Riders</h1>
                 <article>
+                    <!-- Visually hidden heading to satisfy HTML validator (article requires heading) -->
+                    <h2 class="visually-hidden">Our Mission Statement</h2>
                     <img src="images/rafting6.jpg" alt="Happy rafter enjoying the adventure">
                     <p>Our mission at Rapid Riders is to deliver unforgettable white water rafting experiences that
                         combine safety, excitement, and environmental stewardship. We believe every adventure should
